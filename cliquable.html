@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compte Boolky</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef; /* Fond de la page en gris clair */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff; /* Fond blanc pour le conteneur */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            padding: 20px;
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #333; /* Couleur du texte du titre */
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .profile-pic {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px; /* Espace entre l'image et le bouton */
+        }
+
+        .profile-button, .withdraw-button {
+            background-color: #004085; /* Bleu foncé */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.3s;
+            display: inline-block;
+            width: 120px; /* Largeur spécifique des boutons */
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .profile-button:hover, .withdraw-button:hover {
+            background-color: #002752; /* Bleu encore plus foncé */
+        }
+
+        .balance-display {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .balance-display span {
+            display: block;
+        }
+
+        .withdrawal-section {
+            margin-bottom: 20px;
+        }
+
+        .amount-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .withdrawal-method {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            background-color: #ffffff;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .transaction-summary {
+            margin-bottom: 20px;
+        }
+
+        .transaction-summary h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .transaction-item {
+            border-bottom: 1px solid #e9ecef;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .transaction-item:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Compte Boolky</h1>
+        </header>
+
+        <div class="profile-section">
+            <img src="file:///C:/Users/Sergio/Downloads/WhatsApp%20Image%202024-08-26%20at%2019.18.03.jpeg" alt="Profil Utilisateur" class="profile-pic">
+            <a href="file:///C:/Users/Sergio/Documents/Profil22.html" class="profile-button">Voir Profil</a>
+        </div>
+
+        <div class="balance-display">
+            <span>Solde : 1,000.00 FCFA</span>
+            <span>Solde : $1,600.00</span> <!-- Affichage du solde en dollars -->
+        </div>
+
+        <section class="withdrawal-section">
+            <h2>Montant à Retirer</h2>
+            <input type="number" placeholder="Entrez le montant" class="amount-input">
+
+            <h2>Méthode de Retrait</h2>
+            <select class="withdrawal-method">
+                <option value="paypal">PayPal</option>
+                <option value="uba">UBA</option>
+                <option value="mtn">MTN Money</option>
+                <option value="moov">Moov Money</option>
+                <option value="orange">Orange Money</option>
+                <option value="usdt">USDT</option>
+                <option value="tron">Tron</option>
+                <option value="bitcoin">Bitcoin</option>
+                <option value="ethereum">Ethereum</option>
+            </select>
+        </section>
+
+        <section class="transaction-summary">
+            <h2>Historique des Transactions</h2>
+            <div class="transaction-item">
+                <span>25/08/2024</span>
+                <span>-100.00 FCFA</span>
+            </div>
+            <div class="transaction-item">
+                <span>24/08/2024</span>
+                <span>+500.00 FCFA</span>
+            </div>
+        </section>
+
+        <a href="file:///C:/Users/Sergio/Documents/Compte_non_active1.html" class="withdraw-button">Confirmer Retrait</a>
+    </div>
+</body>
+</html>

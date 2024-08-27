@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Utilisateur</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000000;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .profile-container {
+            background-color: #1f1f1f;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            width: 450px;
+            padding: 30px;
+            box-sizing: border-box;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .profile-header {
+            margin-bottom: 20px;
+        }
+
+        .profile-header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #007bff;
+            margin-bottom: 15px;
+        }
+
+        .profile-header h1 {
+            margin: 10px 0;
+            font-size: 28px;
+            color: #ffffff;
+        }
+
+        .profile-header p {
+            margin: 5px 0;
+            font-size: 16px;
+            color: #b0b0b0;
+        }
+
+        .profile-info {
+            text-align: left;
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        .profile-info h2 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+
+        .profile-info .info-item {
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+
+        .profile-info .info-item span {
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .profile-info .info-item a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .profile-info .info-item a:hover {
+            text-decoration: underline;
+        }
+
+        .close-button {
+            background-color: #28a745;
+            color: #ffffff;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .close-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="file:///C:/Users/Sergio/Downloads/WhatsApp%20Image%202024-08-26%20at%2019.18.03.jpeg" alt="Profil Utilisateur">
+            <h1>Bron Daniel</h1>
+            <p>jhfdjskh@example.com</p>
+        </div>
+        <div class="profile-info">
+            <h2>Informations de Profil</h2>
+            <div class="info-item">
+                <span>Nom :</span> Bron
+            </div>
+            <div class="info-item">
+                <span>Prénom :</span> Daniel
+            </div>
+            <div class="info-item">
+                <span>Adresse Mail :</span> yyjjjjjjjjjjt@example.com
+            </div>
+            <div class="info-item">
+                <span>Lien Personnel de Travail :</span> <a href="https://example.com" target="_blank">https://example.com</a>
+            </div>
+        </div>
+        <button class="close-button" onclick="window.location.href='file:///C:/Users/Sergio/Documents/cliquable.html';">Retour</button>
+    </div>
+</body>
+</html>
